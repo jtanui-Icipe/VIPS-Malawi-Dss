@@ -20,7 +20,6 @@ class TestMalawiDssModel(unittest.TestCase):
         instance = MalawiDssModel()
         result = instance.get_date_when_day_degree_limit_has_passed(observations)
         expected_date = datetime(2016, 5, 25, 22, 0, tzinfo=pytz.timezone("UTC"))
-        
         self.assertEquals(result, expected_date)
 
     def test_get_infection_risk(self):
