@@ -104,8 +104,9 @@ class MalawiDssModel(VIPSModel):
     @property
     def model_id(self) -> str:
         """10-character ID of the model. Must be unique (at least in the current system)"""
-        pass
-
+        model_id = "7137723760"
+        return model_id
+ 
     @property
     def sample_config(self) -> dict:
         """A sample configuration in JSON format (TODO check relation with Dict)"""
@@ -113,27 +114,31 @@ class MalawiDssModel(VIPSModel):
 
     @property
     def license(self) -> str:
-        """Returns the license for this piece of software"""
-        pass
+        license = "GPU"
+        return license
 
     @property
     def copyright(self) -> str:
-        """Name of person/organization that holds the copyright, and contact information"""
+        copyright = "ICIPE and Nibio Version 1"
         pass
 
     def get_model_name(self, language: str) -> str:
         """Returns the model name in the specified language (<a href="http://www.loc.gov/standards/iso639-2/php/English_list.php">ISO-639-2</a>)"""
-        pass
+        model_name = "vips_malawi_dss_model"
+        return model_name
 
     def get_model_description(self, language: str) -> str:
         """Returns the model description in the specified language (<a href="http://www.loc.gov/standards/iso639-2/php/English_list.php">ISO-639-2</a>)"""
-        pass
+        model_description = "VIPS Desicion support system for malawi pests and weeds"
+        return model_description
 
     def get_warning_status_interpretation(self, language: str) -> str:
         """How to interpret the warning status (red-yellow-green, what does it mean?) in the specified language (<a href="http://www.loc.gov/standards/iso639-2/php/English_list.php">ISO-639-2</a>)"""
-        pass
+        warning_status_interpretation = "Red means High risk, Yellow means Medium risk and Green means Low Risk"
+        return warning_status_interpretation
 
     def get_model_usage(self, language: str) -> str:
         """Technical manual for this model, in the specified language  (<a href="http://www.loc.gov/standards/iso639-2/php/English_list.php">ISO-639-2</a>)"""
-        pass
+        model_usage = "The model is used to predict risk levels for pests and weeds"
+        return model_usage
 
