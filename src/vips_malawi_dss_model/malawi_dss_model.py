@@ -120,7 +120,7 @@ class MalawiDssModel(VIPSModel):
     @property
     def copyright(self) -> str:
         copyright = "ICIPE and Nibio Version 1"
-        pass
+        return copyright
 
     def get_model_name(self, language: str) -> str:
         """Returns the model name in the specified language (<a href="http://www.loc.gov/standards/iso639-2/php/English_list.php">ISO-639-2</a>)"""
