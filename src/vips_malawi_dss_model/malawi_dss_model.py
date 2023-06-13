@@ -8,12 +8,14 @@ class MalawiDssModel(VIPSModel):
         This is the result of a VIPS Model implementation class
     """
 
-    MODEL_ID = "FUNGUSPILO"
-    COPYRIGHT = "(c) 2023 ACME Industries"
+    MODEL_ID = "MALAWI-DSS"
+    COPYRIGHT = "(c) 2023 ICIPE DMMGU"
 
     THRESHOLD = 500.0
     observations = None
     CONTROLLED_INFECTION_RISK = "CONTROLLED_INFECTION_RISK"
+
+
 
     def get_date_when_day_degree_limit_has_passed(self, observations: list):
         # Initalize the day degree counter
