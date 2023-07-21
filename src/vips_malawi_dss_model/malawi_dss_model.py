@@ -104,7 +104,7 @@ class MalawiDssModel(VIPSModel):
     @property
     def model_id(self) -> str:
         """10-character ID of the model. Must be unique (at least in the current system)"""
-        model_id = "7137723760"
+        model_id = "3456432123"
         return model_id
  
     @property
